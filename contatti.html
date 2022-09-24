@@ -1,0 +1,130 @@
+<!doctype html>
+	<html lang="it">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://kit.fontawesome.com/e8ca85584d.js" crossorigin="anonymous"></script>
+		<title>Riff'n'Food</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Ubuntu&display=swap" rel="stylesheet">
+		<style type="text/css">
+			body {
+				font-family: Ubuntu, sans-serif;
+			}
+			* {
+				box-sizing: border-box;
+			}
+
+			main {
+				margin: 0% 1% 1% 1%;
+				padding: 3% 1% 1% 1%;
+			}
+
+			h2{
+				color: rgb(245, 196, 42);
+			}
+
+			h4 {
+				text-align: center;
+				font-size: 1em;
+			}
+
+			input [type=text], select, textarea {
+				width: 100%;
+				padding: 12px;
+				border: 1px solid #ccc;
+				margin-top: 6px;
+				margin-bottom: 16px;
+				resize: vertical;
+			}
+
+			input[type=submit] {
+				background-color: #04AA6D;
+				color: white;
+				padding: 12px 20px;
+				border: none;
+				cursor: pointer;
+			}
+
+			input[type=submit]:hover {
+				background-color: #45a049;
+			}
+
+			.column {
+				float: left;
+				width: 50%;
+				margin-top: 6px;
+				padding: 20px;
+			}
+
+			.row:after {
+				display: table;
+				clear: both;
+			}
+
+			@media screen and (max-width:  600px) {
+				.column, input[type=submit] {
+					width: 100%;
+					margin-top: 0;
+				}
+			}
+
+		</style>
+     </head>
+			<body>
+			<header>
+				<div class="logo-image">
+					<img src="img/Beta.png" id="logo-image"/>
+     	 			</div>
+     	 			<h1 class="title"><b>Il tour di concerti più goloso d'Italia</b></h1>
+						<p class="social">
+                <a href="https://twitter.com/riffnfood" style="background-color: none; border-color: none;"><i class="fa-brands fa-square-twitter"></i></i></a>
+                <a href="https://www.instagram.com/riffnfood/" style="background-color: none; border-color:none;"><i class="fa-brands fa-square-instagram"></i></i></a>
+             			 </p>
+             	<nav>
+     				<ul>					
+     				<li><a class="whitelink" href="index.html"> Homepage </a></li>
+     				<li><a class="whitelink" href="calendarioeventi.html"> Scopri i nostri eventi </a></li>
+     				<li><a class="whitelink" href="aboutus.html"> Conosciamoci meglio </a></li>
+     				<li><a class="whitelink active" href="#"> Serve aiuto? </a></li>
+     				</ul>	
+     			</nav>			
+     			</header>
+		     	 	<main>
+		     	 		<i class="fa-solid fa-comments"></i>
+		     	 	<h2>Hai bisogno di aiuto?</h2>
+		     	 	<h4>Usa la finestra qui sotto per descrivere il tuo problema</h4>
+		     	 	</main>
+		     	 	<section>
+			     	 		<div class="row">
+		     	 			<div class="column">
+		     	 				<img src="img/mappa.svg" style="width: 95%;">
+		     	 			</div>
+		     	 			<div class="column">
+		     	 				<form action="/action_page.php">
+		     	 					<label for="fname">Nome</label>
+		     	 					<input type="text" id="fname" name="firstname" placeholder="Il tuo nome">
+		     	 					<label for="lname">Cognome</label>
+		     	 					<input type="text" id="lname" name="lastname" placeholder="Il tuo cognome">
+		     	 					<label for="country">Da dove vieni?</label>
+		     	 					<select id="country" name="country">
+		     	 						<option value="Trieste">Trieste</option>
+		     	 						<option value="Bologna">Bologna</option>
+		     	 						<option value="Salerno">Salerno</option>
+		     	 						<option value="Reggio Calabria">Reggio Calabria</option>
+		     	 						<option value="Roma">Roma</option>
+		     	 						<option value="Viterbo">Viterbo</option>
+		     	 						<option value="Carrara">Carrara</option>
+		     	 						<option value="Modena">Modena</option>
+		     	 						<option value="Reggio Emilia">Reggio Emilia</option>
+		     	 						<option value="Milano">Milano</option></select>
+		     	 						<label for="subject">Contenuto</label>
+		     	 						<textarea id="subject" name="subject" placeholder="Raccontaci tutto!"></textarea>
+		     	 						<input type="submit" value="submit">
+		     	 			</div>
+		     	 		</div>
+		     	 	</section>
+		     	 </body>
